@@ -44,7 +44,19 @@ TIM_HandleTypeDef htim16;
 
 /* USER CODE BEGIN PV */
 // TODO: Define input variables
+uint8_t ledPatterns[9] = {
+    0b11101001, // Pattern 1
+    0b11010010, // Pattern 2
+    0b10100100, // Pattern 3
+    0b01001000, // Pattern 4
+    0b10010000, // Pattern 5
+    0b00100000, // Pattern 6
+    0b01000000, // Pattern 7
+    0b10000000, // Pattern 8
+    0b00000000  // Pattern 9
+};
 
+uint8_t currentPatternIndex = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
